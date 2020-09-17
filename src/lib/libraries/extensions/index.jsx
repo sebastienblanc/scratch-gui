@@ -6,7 +6,8 @@ import musicInsetIconURL from './music/music-small.svg';
 
 import penIconURL from './pen/pen.png';
 import penInsetIconURL from './pen/pen-small.svg';
-
+import newBlockImage from './newblocks.png';
+import newBlockButtonImage from './newblocks-small.png';
 import videoSensingIconURL from './videoSensing/video-sensing.png';
 import videoSensingInsetIconURL from './videoSensing/video-sensing-small.svg';
 
@@ -317,5 +318,25 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: 'NewBlocks',
+        extensionId: 'newblocks',
+        collaborator: 'Me',
+        iconURL: newBlockImage,
+        insetIconURL: newBlockButtonImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="New blocks."
+                description="my block"
+                id="gui.extension.newblocks.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://scratch.mit.edu/wedo'
+
     }
 ];
